@@ -2,11 +2,11 @@
 
 **.dot-hyphen** is an esoteric programming language created by me in 2026. The language came to be as a result of me toying with the fact that $-(-x)=+x$. The language also draws some inspiration from [Lambda Calculus](https://esolangs.org/wiki/Lambda_calculus) for the philosophy that everything is an expression, although as you'll see, the language is inherently impure unlike most calculus-like languages.
 
-# Memory Model
+## Memory Model
 
 **.dot-hyphen** operates of a single unbounded-length array consisting of unbounded-valued **signed** integers, all of which are initialized to `0`. The address space of the array can be negative. 
 
-# Syntax and Semantics
+## Syntax and Semantics
 
 The language only has two syntax constructions, both of which are expressions:
 
@@ -17,7 +17,7 @@ The entire program is basically a giant nested-expression made using these two c
 
 The root expression is evaluated nonstop. At each evaluation, if the result of the root expression is within the ASCII range, it is outputted as an ASCII character.
 
-# Get Started
+## Get Started
 
 Write a `.dot-hyphen` code with your favorite text-editor (or directly in the terminal if you're a psycho). Then, feed it to the interpreter like follows
 ```sh
