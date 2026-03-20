@@ -80,7 +80,7 @@ def main():
     while index < len(code) and code[index] not in ['.', '-'] and not code[index].isdigit():
         index += 1
     if index < len(code):
-        print(f"SYNTAX ERROR: Unexpected {code[index]} at character #{index+1}")
+        print(f"SYNTAX ERROR: Unexpected {code[index]} at character #{index+1}, a valid program must contain only ONE expression")
         sys.exit(1)
     iteration = 0
     while limit is None or iteration < limit:
